@@ -25,18 +25,18 @@ public class ComplextNumberTest {
 
     @Test
     public void mapCoordinates() {
-        Main main = new Main(-2,-2,4,4,256,256);
-        assertEquals(new ComplexNumber(-2,2), main.toComplex(0,0));
-        assertEquals(new ComplexNumber(2,-2), main.toComplex(256,256));
-        assertEquals(new ComplexNumber(0,0), main.toComplex(128,128));
-        assertEquals(new ComplexNumber(0,-2), main.toComplex(128,256));
+        Renderer renderer = new Renderer(-2,-2,4,4,256,256);
+        assertEquals(new ComplexNumber(-2,2), renderer.toComplex(0,0));
+        assertEquals(new ComplexNumber(2,-2), renderer.toComplex(256,256));
+        assertEquals(new ComplexNumber(0,0), renderer.toComplex(128,128));
+        assertEquals(new ComplexNumber(0,-2), renderer.toComplex(128,256));
 
-        main = new Main(0,0,2,2,256,256);
-        assertEquals(new ComplexNumber(0,0), main.toComplex(0,0));
-        assertEquals(new ComplexNumber(2,-2), main.toComplex(256,256));
-        assertEquals(new ComplexNumber(1,-1), main.toComplex(128,128));
+        renderer = new Renderer(0,0,2,2,256,256);
+        assertEquals(new ComplexNumber(0,0), renderer.toComplex(0,0));
+        assertEquals(new ComplexNumber(2,-2), renderer.toComplex(256,256));
+        assertEquals(new ComplexNumber(1,-1), renderer.toComplex(128,128));
 
-        assertEquals(new ComplexNumber(1,-2), main.toComplex(128,256));
+        assertEquals(new ComplexNumber(1,-2), renderer.toComplex(128,256));
     }
 
     @Test
