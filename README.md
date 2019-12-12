@@ -5,4 +5,4 @@ Mandelbrot set visualizer with JFX UI
 `mvn compile favafx:run` is all you need
 
 # Screen Shot
-
+![](screenshot.png)
