@@ -1,4 +1,5 @@
-import java.math.BigDecimal;
+package render;
+
 import java.util.Objects;
 
 public final class ComplexNumber {
@@ -40,7 +41,7 @@ public final class ComplexNumber {
 
     @Override
     public String toString() {
-        return "ComplexNumber{" +
+        return "render.ComplexNumber{" +
                 "real=" + real +
                 ", imaginary=" + imaginary +
                 '}';

@@ -1,6 +1,6 @@
-import javax.imageio.ImageIO;
+package render;
+
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,20 +9,15 @@ import java.util.stream.IntStream;
 
 public class Renderer {
 
-    public static final int THREADS = 8;
-    public static final ExecutorService EX = Executors.newFixedThreadPool(THREADS);
+    private final int THREADS = 8;
+    private final ExecutorService EX = Executors.newFixedThreadPool(THREADS);
     private int threshold = 2;
     private int iterations = 100;
-
     private final int width;
     private final int height;
-
     private final double stepX;
-
     private final double stepY;
-
     private final ComplexPlane plane;
-
 
 
 

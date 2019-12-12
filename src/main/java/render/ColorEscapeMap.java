@@ -1,3 +1,5 @@
+package render;
+
 public final class ColorEscapeMap {
     public static final int[] rgbColorEscapeMap = new int[101];
 

@@ -1,3 +1,5 @@
+package render;
+
 import java.util.Objects;
 
 public class ComplexPlane {
@@ -12,7 +14,7 @@ public class ComplexPlane {
 
     @Override
     public String toString() {
-        return "ComplexPlane{" +
+        return "render.ComplexPlane{" +
                 "x=" + x +
                 ", y=" + y +
                 ", width=" + width +

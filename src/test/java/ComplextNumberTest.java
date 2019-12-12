@@ -1,4 +1,7 @@
 import org.junit.jupiter.api.Test;
+import render.ComplexNumber;
+import render.Escape;
+import render.Renderer;
 
 import static org.junit.jupiter.api.Assertions.*;
 
